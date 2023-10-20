@@ -169,9 +169,22 @@ h3 {
 }
 
 .hero__aside {
-  min-height: 20vh;
+  min-height: 10vh;
   grid-row: span 2;
   background-color: var(--clr-body);
+}
+
+.hero__aside div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.hero__aside svg {
+  fill: var(--clr-primary);
+  width: 20vw;
 }
 
 @media screen and (max-width: 1280px) {
