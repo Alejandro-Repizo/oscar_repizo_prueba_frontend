@@ -15,6 +15,6 @@
 }
 
 .nav ul li:hover {
-    color: initial;
+    color: var(--clr-secondary);
     transition: color 500ms ease;
 }

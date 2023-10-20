@@ -35,7 +35,7 @@ export const Footer = () => {
 			<section>
 				<small>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.{" "}
-					<a href="#">Link here</a> Fugit, omnis?
+					<a href="#" onClick={() => console.log('footer link')}>Link here</a> Fugit, omnis?
 				</small>
 			</section>
 		</footer>
