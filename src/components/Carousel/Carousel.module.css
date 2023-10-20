@@ -1,0 +1,78 @@
+.wrapper {
+    position: relative;
+    padding-block: 1.3rem;
+}
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: smooth;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    scroll-snap-align: start;
+    width: 35ch;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    padding: 3em 1.5em;
+    margin-inline: 2rem;
+    background-color: var(--clr-secondary);
+}
+
+.card>*+* {
+    margin-top: 1em;
+}
+
+.card h2 {
+    font-size: var(--fs-200);
+    color: var(--clr-primary);
+    text-align: center;
+    font-weight: bold;
+}
+
+.card__image {
+    --size: 7rem;
+
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background-color: var(--clr-body);
+}
+
+.button {
+    --position: 1rem;
+
+    position: absolute;
+    top: 50%;
+    padding: 0.1rem;
+    border-radius: 50%;
+    background-color: var(--clr-primary);
+    border: 2px solid #FFFFFF;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button--left {
+    left: var(--position);
+}
+
+.button--right {
+    right: var(--position);
+}
+
+.button svg {
+    --size: 3em;
+
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    fill: var(--clr-text);
+}
